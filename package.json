@@ -1,0 +1,27 @@
+{
+  "name": "cli-downloader",
+  "version": "1.0.0",
+  "engine": {
+    "node": ">=16"
+  },
+  "engineStrict": true,
+  "description": "Simple command line downloader",
+  "main": "spider.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [
+    "Command",
+    "line",
+    "spider",
+    "download"
+  ],
+  "author": "Thomas",
+  "license": "ISC",
+  "dependencies": {
+    "mkdirp": "^1.0.4",
+    "slug": "^5.1.0",
+    "superagent": "^6.1.0"
+  }
+}
