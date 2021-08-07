@@ -2,7 +2,7 @@ import path from 'path';
 import {URL} from 'url';
 import slug from 'slug';
 
-export function urlToPathname(url) {
+export function urlToFilename(url) {
     const parsedUrl = new URL(url);
     const urlPath= parsedUrl.pathname.split('/')
     .filter(function (component) {
