@@ -2,10 +2,10 @@ import path from 'path';
 import fs from 'fs';
 import mkdirp from 'mkdirp';
 import superagent from 'superagent';
-import { urlToPathname } from './helper.js';
+import { urlToFilename } from './helper.js';
 
 export function spider(url,cb){
-    const filename= urlToPathname(url);
+    const filename= urlToFilename(url);
     fs.access(filename, err=>{
         if(err && err.code === 'ENOENT'){
             console.log(`Downloading the ${url} at ${filename}`);
